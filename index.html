@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>home work 5</title>
+    <title>home work 6</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -46,18 +46,36 @@
           </li>
         </ul>
       </address>
+      <button class="menu-btn" type="button">
+        <svg class="menu-icon" width="24" height="24"><use href="./images/icons.svg#icon-heroicons-menu"></use></svg>
+      </button>
+    </div>
+    <div class="mobile-menu is-open">
+      <div class="container mobile-menu-container">
+        <button type="button" class="mobile-menu-close"><svg class="modal-close-btn" width="8" height="8"><use href="./images/icons.svg#icon-close-black"></use>
+        </svg>
+        </button>
+        <nav class="mobile-menu-nav">Navigation</nav>
+        <address>Address</address>
+        <ul class="mobile-menu-soc">
+          <li>inst</li>
+          <li>twt</li>
+          <li>fcb</li>
+          <li>lcd</li>
+        </ul>
+      </div>
     </div>
     </header>
 
     <main>
-      <section class="hero">
+      <section class="hero hidden">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="hero-btn" type="button">Order Service</button>
         </div>
       </section>
 
-      <section class="avantages">  
+      <section class="avantages hidden">  
         <div class="container">
           <h2 class="visually-hidden">Ouer avantages</h2>
           <ul class="avantages-list">
@@ -97,7 +115,7 @@
         </div>
       </section>
 
-      <section class="team">
+      <section class="team hidden">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
@@ -265,7 +283,7 @@
         </div>
       </section>
 
-      <section class="portfolio">
+      <section class="portfolio hidden">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -370,7 +388,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer hidden">
       <div class="container">
         <div class="footer-block-logo">
           <a class="footer-logo" href="./index.html">Web<span class="footer-logo-studio">Studio</span></a>
@@ -432,7 +450,7 @@
       </div>
     </footer>
 
-    <div class="backdrop is-open">
+    <div class="backdrop hidden">
      <div class="modal">
       <button type="button" class="modal-open-btn"><svg class="modal-close-btn" width="8" height="8"><use href="./images/icons.svg#icon-close-black"></use>
       </svg>
