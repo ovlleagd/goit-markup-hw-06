@@ -71,6 +71,7 @@ body {
     }
 
     .header-logo {
+            font-family: "Raleway", sans-serif;
             font-weight: 700;
             font-size: 18px;
             line-height: 1.17;
@@ -290,9 +291,24 @@ body {
 /*----------hero----------*/
 
 .hero {
-    background: rgba(46, 47, 66, 0.7);
+    background-color: rgba(46, 47, 66, 0.7);
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office-mob-x1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 767px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding-top: 72px;
     padding-bottom: 72px;
+
 }
 
 .hero-title {
@@ -308,7 +324,7 @@ body {
 .hero-btn {
     border-radius: 4px;
     padding: 16px 32px;
-    width: 169px;
+    width: 170px;
     height: 56px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background: #4d5ae5;
@@ -318,6 +334,7 @@ body {
     color: #fff;
     margin: 0 auto;
     display: block;
+    border: none;
     
 }
 
@@ -344,6 +361,8 @@ body {
      padding-top: 188px;
      padding-bottom: 188px;
      } 
-
-
+    .hero-title {
+        padding-bottom: 48px; 
+     }    
+    
 }
