@@ -71,7 +71,6 @@ body {
     }
 
     .header-logo {
-        font-family: "Raleway", sans-serif;
             font-weight: 700;
             font-size: 18px;
             line-height: 1.17;
@@ -286,4 +285,65 @@ body {
     .mobile-menu {
        display: none;
     }
+}
+
+/*----------hero----------*/
+
+.hero {
+    background: rgba(46, 47, 66, 0.7);
+    padding-top: 72px;
+    padding-bottom: 72px;
+}
+
+.hero-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 111%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 72px;    
+}
+
+.hero-btn {
+    border-radius: 4px;
+    padding: 16px 32px;
+    width: 169px;
+    height: 56px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background: #4d5ae5;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #fff;
+    margin: 0 auto;
+    display: block;
+    
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        height: 436px;
+        padding-top: 112px;
+        padding-bottom: 112px;
+        } 
+
+    .hero-title {
+        font-size: 56px;
+        line-height: 107%;
+        text-align: center;
+        color: #fff;
+        padding-bottom: 36px; 
+
+        }    
+}
+
+@media screen and (min-width: 1158px)  {
+   .hero {
+     height: 600px;
+     padding-top: 188px;
+     padding-bottom: 188px;
+     } 
+
+
 }
