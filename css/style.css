@@ -50,6 +50,8 @@ body {
         .container {
             max-width: 1158px;
             padding: 0 15px;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 
@@ -500,6 +502,8 @@ body {
 }
 
 .avantages-item {
+    width: 264px;
+    height: 112px;
     margin-bottom: 72px;
     width: 100%;
 }
@@ -564,8 +568,10 @@ body {
 
     .avantages{
         margin-bottom: 120px;
-        
+    }
 
+    .avantages-list {
+        gap: 24px;
     }
 
     .avantages-item {
@@ -593,8 +599,11 @@ body {
 /* -------------team----------- */
     
 .team {
+    display: flex;
     background: #f4f4fd;
     padding: 96px 0;
+    margin-left: auto;
+    margin-right: auto;
     
 }
 
@@ -630,8 +639,6 @@ body {
 .team-item {
     border-radius: 0 0 4px 4px;
     padding-bottom: 32px;
-    width: 264px;
-    height: 428px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background: #fff;
     margin-bottom: 72px;
@@ -657,6 +664,8 @@ body {
     margin-bottom: 32px;
 }
 
+
+
 .team-soc-link {
     width: 40px; 
     height: 40px;
@@ -681,8 +690,6 @@ body {
     .team {
         width: 768px;
         height: 1224px;
-        margin-right: auto;
-        margin-left: auto;
         padding: 96px 0;
     }
 
@@ -695,23 +702,26 @@ body {
         margin-bottom: auto;
     }
 
+    @media screen and (min-resolution: 2dppx) {
+
+    }
+}
+
     @media screen and (min-width: 1158px) {
         .team {
             width: 1440px;
             height: 780px;
             padding: 120px 0;
-            margin-left: auto;
-            margin-right: auto;
-            
         } 
 
         .team-list {
             display: flex;
             justify-content: center;
-            gap: 24px;   
+            gap: 24px;  
+
         }
     }
- }
+ 
 
 /*--------------modal------------*/
 
