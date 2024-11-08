@@ -33,28 +33,29 @@ body {
     }
 
     /*------common-----*/
-
     .container {
         max-width: 320px;
         padding: 0 16px;
         margin: 0 auto;
     }
 
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 768px) {
         .container {
-            max-width: 768px;
+            min-width: 768px;
+            margin: 0 auto;     
         }
     }
 
     @media screen and (min-width: 1158px){
         .container {
-            max-width: 1158px;
+            min-width: 1158px;
             padding: 0 15px;
             margin-left: auto;
             margin-right: auto;
         }
     }
 
+   
     /* ------------------------header--------------------- */
 
     .header {
@@ -391,6 +392,8 @@ body {
     width: 320px;
 }
 
+
+
 @media screen and (min-resolution: 2dppx) {
     .hero {
         background-image: linear-gradient(
@@ -440,7 +443,10 @@ body {
         height: 436px;
         padding-top: 112px;
         padding-bottom: 112px;
-        } 
+        margin-left: auto;
+        margin-right: auto;
+         } 
+    
     @media screen and (min-resolution: 2dppx) {
         .hero {
             background-image: linear-gradient(
@@ -457,8 +463,16 @@ body {
         text-align: center;
         color: #fff;
         padding-bottom: 36px; 
-
-        }    
+        margin-left: auto;
+        margin-right: auto;
+    }  
+    
+    .hero-container {
+        display: flex;
+	    flex-direction: column;
+	    justify-content: flex-start;
+	    align-items: center;
+    }
 }
 
 @media screen and (min-width: 1158px)  {
@@ -471,10 +485,15 @@ body {
      width: 1440px;
      height: 600px;
      padding-top: 188px;
-     padding-bottom: 188px;
+     margin-right: auto;
+     margin-left: auto;
+     
      } 
+     
     .hero-title {
-        padding-bottom: 48px; 
+        padding-bottom: 48px;
+        margin-left: auto;
+        margin-right: auto;
      } 
      @media screen and (min-resolution: 2dppx) {
         .hero {
@@ -484,7 +503,15 @@ body {
             ),
         url(../images/people-office-desk-x2.jpg);
          } 
-        }       
+        } 
+        .hero-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+        }      
     
 }
 
@@ -493,6 +520,12 @@ body {
 .avantages {
     margin-top: 96px;
     margin-bottom: 96px;
+}
+.avantages-container {
+    display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
 }
 
 .avantages-list {
@@ -544,7 +577,7 @@ body {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        gap: 24px;
+        gap: 72px 24px;
         }
     .avantages-subtitle {
         text-align: left;
@@ -560,7 +593,6 @@ body {
         align-items: center;
         border: 1px solid #8e8f99;
         border-radius: 4px;
-        
         height: 112px;
         background-color: #f4f4fd;
         margin-bottom: 8px;     
@@ -582,6 +614,12 @@ body {
         margin-bottom: 0;
         width: calc((100% - 72px) / 4);
     }
+
+    .avantages-list {
+        gap: ;
+    }
+
+
 
     
 
@@ -617,6 +655,13 @@ body {
     margin-right: auto;
     margin-bottom: 96px;
     
+}
+
+.team-container {
+    display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
 }
 
 .team-title {
@@ -738,7 +783,14 @@ body {
         display: flex;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 96px;
+        margin-bottom: 120px;
+    }
+
+    .portfolio-container {
+        display: flex;
+	    flex-direction: column;
+	    justify-content: flex-start;
+	    align-items: center;
     }
     
     .portfolio-title {
@@ -801,8 +853,15 @@ body {
 
     @media screen and (min-width: 768px) {
         .portfolio {
-            width: 736px;
-            height: 1516px;
+            display: block;
+            width: 768px;
+        }
+
+        .portfolio-container {
+            padding-left: 0;
+            padding-right: 0;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .portfolio-list {
@@ -811,7 +870,7 @@ body {
 
         .portfolio-item {
             width: 356px;
-            width: calc((100% - 24px) / 2)
+            
         }
 
         .portfolio-item-images {
@@ -827,7 +886,13 @@ body {
     @media screen and (min-width: 1158px) {
         .portfolio {
             width: 1128px;
-            
+            height: 1000px;
+        }
+
+        .portfolio-container {
+            width: 1128px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .portfolio-list {
@@ -836,12 +901,12 @@ body {
 
         .portfolio-item-images {
             width: 360px;
+            background-size: cover;
         }
 
         .portfolio-item {
             box-shadow: none;
             width: 360px;
-            width: calc((100% - 48px) / 3);
         }
 
         .portfolio-subtitle-text {
@@ -849,13 +914,9 @@ body {
             border-left: 1px solid #e7e9fc;
             border-right: 1px solid #e7e9fc;
             padding: 32px 16px;
-            width: 350px;
+            width: 360px;
         }
-
-        
     }
-
-
 
 
     .portfolio-cover-text {
@@ -894,6 +955,13 @@ body {
         padding-bottom: 96px;
         width: 320px;
         margin: 0 auto;
+    }
+
+    .footer-container {
+        display: flex;
+	    flex-direction: column;
+	    justify-content: flex-start;
+	    align-items: center;
     }
 
     .footer-block-logo {
@@ -1063,42 +1131,45 @@ body {
     .footer-subscribe {
         display: flex;
         gap: 24px;
-        margin-bottom: 16px; 
     }
     
     @media screen and (min-width: 768px) {
 
-        .container footer {
-            width: 768px;
+        .container {
             display: flex;
             flex-wrap: wrap;
             align-content: center;
         }
 
+        .footer-container {
+            display: flex;
+            flex-direction: row;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
         .footer {    
             width: 768px;
             padding-top: 0;
-            padding-bottom: 0;
-            
-        }
-
-        .footer-logo{
-            margin-left: 0;
+            padding-bottom: 0;     
         }
 
         .footer-block-logo {
             width: 264px;
             margin-top: 96px;
-            margin-left: 92px;
+            margin-left: 108px;
             margin-right: 24px;
         }
 
+        .footer-logo {
+            margin-left: 0;
+        }
+
         .footer-soc {
-            margin-top: 96px;
+            margin-left: 0;
             margin-bottom: 0;
             width: 208px;
-            margin-left: 0;
-            margin-right: 148px;
+            
         }
 
         .footer-media-text {
@@ -1107,9 +1178,16 @@ body {
         }
 
         .subscribe {
-            margin-left: 92px;
-            
+            margin-left: 108px; 
+            display: flex;
+            align-items: normal;     
         }
+
+        .footer-subscribe-label {
+            width: 264px;
+        }
+
+        
 
         .footer-input {
             margin-left: 0;
@@ -1131,9 +1209,50 @@ body {
             margin-bottom: 96px;
         }
 
-    
     }
 
+    @media screen and (min-width: 1158px) {
+        .footer {
+            width: 1440px;
+            height: 312px;
+            padding-right: 0;
+            padding-left: 0;
+        }
+
+        .footer-container {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+
+        .footer-block-logo {
+            margin-top: 100px;
+            margin-bottom: 100px;
+            margin-left: 148px;
+            margin-right: 120px;
+        }
+
+        .footer-soc {
+            margin-top: 100px;
+            margin-right: 80px;
+            margin-bottom: 132px;
+        }
+
+        .subscribe {
+            margin-left: 0;
+            margin-top: 100px;
+            align-items: normal;
+        }
+
+        .subscribe-btn {
+            margin-left: 0;
+        }
+
+        .footer-subscribe {
+            margin-bottom: 132px;
+        }
+
+    }
 
 
 
