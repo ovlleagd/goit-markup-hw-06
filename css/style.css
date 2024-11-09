@@ -281,7 +281,6 @@ body {
 }
 
 .mobile-menu-nav {
-    margin-top: 72px;
     margin-bottom: auto;
 }
 
@@ -389,7 +388,7 @@ body {
     align-items: center;
     padding-top: 72px;
     padding-bottom: 72px;
-    width: 320px;
+    max-width: 320px;
 }
 
 
@@ -401,7 +400,6 @@ body {
             rgba(46, 47, 66, 0.7)
         ),
     url(../images/people-office-mob-x2.jpg);
-        width: 768px;
      } 
     }   
 
@@ -412,7 +410,7 @@ body {
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
-    padding-bottom: 72px;    
+    margin-bottom: 72px;    
 }
 
 .hero-btn {
@@ -439,8 +437,7 @@ body {
             rgba(46, 47, 66, 0.7)
         ),
     url(../images/people-office-tab-x1.jpg);
-        width: 768px;
-        height: 436px;
+        max-width: 768px;
         padding-top: 112px;
         padding-bottom: 112px;
         margin-left: auto;
@@ -482,8 +479,7 @@ body {
         rgba(46, 47, 66, 0.7)
     ),
     url(../images/people-office-desk-x1.jpg);
-     width: 1440px;
-     height: 600px;
+     max-width: 1440px;
      padding-top: 188px;
      margin-right: auto;
      margin-left: auto;
@@ -518,8 +514,8 @@ body {
 /* -----------avantages-------- */
 
 .avantages {
-    margin-top: 96px;
-    margin-bottom: 96px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 .avantages-container {
     display: flex;
@@ -599,11 +595,6 @@ body {
     }
 
     .avantages {
-       
-        width: 1128px;
-        height: 224px;
-        margin-top: 120px;
-        margin-bottom: 120px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -745,8 +736,6 @@ body {
 
  @media screen and (min-width: 768px) {
     .team {
-        width: 768px;
-        height: 1224px;
         padding: 96px 0;
     }
 
@@ -762,8 +751,6 @@ body {
 
     @media screen and (min-width: 1158px) {
         .team {
-            width: 1440px;
-            height: 780px;
             padding: 120px 0;
             margin-bottom: 120px;
         } 
@@ -854,7 +841,6 @@ body {
     @media screen and (min-width: 768px) {
         .portfolio {
             display: block;
-            width: 768px;
         }
 
         .portfolio-container {
@@ -885,8 +871,7 @@ body {
 
     @media screen and (min-width: 1158px) {
         .portfolio {
-            width: 1128px;
-            height: 1000px;
+            
         }
 
         .portfolio-container {
@@ -953,7 +938,6 @@ body {
         background: #2e2f42;
         padding-top: 96px;
         padding-bottom: 96px;
-        width: 320px;
         margin: 0 auto;
     }
 
@@ -1104,7 +1088,6 @@ body {
         border-radius: 4px;
         border: none;
         height: 40px;
-        padding: 8px 24px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1149,7 +1132,6 @@ body {
         }
 
         .footer {    
-            width: 768px;
             padding-top: 0;
             padding-bottom: 0;     
         }
@@ -1213,8 +1195,6 @@ body {
 
     @media screen and (min-width: 1158px) {
         .footer {
-            width: 1440px;
-            height: 312px;
             padding-right: 0;
             padding-left: 0;
         }
