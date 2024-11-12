@@ -604,6 +604,11 @@ body {
         justify-content: center;
         margin-bottom: 0;
         width: calc((100% - 72px) / 4);
+        margin-bottom: 120px;
+    }
+
+    .avantages-item:last-child {
+        margin-bottom: 120px;
     }
 
     .avantages-list {
@@ -802,15 +807,16 @@ body {
 
     .portfolio-item {
         width: 288px;
-
         box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
         background: #fff;
         transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .portfolio-item-images {
-        width: 288px;
-        height: 280px;
+        
+        display: block;
+        max-width: 100%;
+        height: auto;
     }
 
     .portfolio-subtitle-text {
@@ -860,7 +866,7 @@ body {
         }
 
         .portfolio-item-images {
-            width: 356px;
+            width: 360px;
         }
 
         .portfolio-subtitle-text {
@@ -885,7 +891,6 @@ body {
         }
 
         .portfolio-item-images {
-            width: 360px;
             background-size: cover;
         }
 
