@@ -138,7 +138,6 @@ body {
         }
         
         .header-menu-link.current::after {
-            content: '';
             position: absolute;
             left: 0;
             bottom: -1px;
@@ -612,12 +611,9 @@ body {
     }
 
     .avantages-list {
-        gap: ;
+    
     }
 
-
-
-    
 
     .avantages-subtitle {
         font-weight: 500;
